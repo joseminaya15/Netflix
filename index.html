@@ -116,9 +116,6 @@
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-pago blue" onclick="goToPago(1)">Tarjeta de Crédito / Débito</button>
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-pago green" onclick="goToPago(2)">Efectivo</button>
                     </div>
-                    <div id="input-tarjeta" class="js-informacion js-done">
-                        <h2>Tarjeta</h2>
-                    </div>
                     <div id="input-efectivo" class="js-informacion js-done">
                         <div class="js-input">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -149,6 +146,58 @@
                                 <input class="mdl-textfield__input" type="text" id="referencia">
                                 <label class="mdl-textfield__label" for="referencia">Número de Referencia</label>
                             </div>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-default" onclick="">Volver atrás</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="">Listo, ya transferí!</button>
+                        </div>
+                    </div>
+                    <div id="input-tarjeta" class="js-informacion js-done">
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="monto">
+                                <label class="mdl-textfield__label" for="monto">Monto en dólares</label>
+                            </div>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="tarjeta">
+                                <label class="mdl-textfield__label" for="tarjeta">Número de Tarjeta</label>
+                            </div>
+                        </div>
+                        <div class="js-input js-select">
+                            <select class="selectpicker" id="bank" name="bank" title="Seleccione su Banco">
+                                <option value="Banesco">Banesco</option>
+                                <option value="Interbank">Interbank</option>
+                            </select>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="nombre_tarjeta">
+                                <label class="mdl-textfield__label" for="nombre_tarjeta">Nombre Y Apellido tal cual este escrito en la tarjeta</label>
+                            </div>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="dni">
+                                <label class="mdl-textfield__label" for="dni">Número de DNI</label>
+                            </div>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="fecha">
+                                <label class="mdl-textfield__label" for="fecha">Fecha de Expiración</label>
+                            </div>
+                        </div>
+                        <div class="js-input">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="codigo">
+                                <label class="mdl-textfield__label" for="codigo">Código de Seguridad (CVV)</label>
+                            </div>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-default" onclick="">Volver atrás</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="">Listo, ya pagué!</button>
                         </div>
                     </div>
                 </div>
