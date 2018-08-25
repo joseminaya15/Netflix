@@ -37,9 +37,15 @@ function next(){
 		}
 		$('#title').text('Configura tu Netflix');
 		$('#subtitle').text('Estos seran los datos que registraremos en Netflix, osea que apenas pagues podras acceder a tu cuenta con estos datos:');
+		$('#buttonNetflix').text('Así quiero mi cuenta');
+		$('#input-pais').fadeOut();
+		$('#input-configuracion').fadeIn();
 	}else if(m == 4){
 		$('#title').text('Selecciona tu plan');
 		$('#subtitle').text('Este sera el plan que configuraremos en tu cuenta:');
+		$('#buttonNetflix').css('display','none');
+		$('#input-configuracion').fadeOut();
+		$('#input-plan').fadeIn();
 	}
 }
 function validateEmail(email){
