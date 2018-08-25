@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description"            content="Groted">
+    <meta name="keywords"               content="Groted, Netflix, Comprando Netflix">
+    <meta name="robots"                 content="Index,Follow">
+    <meta name="date"                   content="August 25, 2018"/>
+    <meta name="language"               content="es">
+    <meta name="theme-color"            content="#000000">
+	<title>Groted.net</title>
+    <link rel="shortcut icon" href="public/img/logo/favicon.ico">
+    <link rel="stylesheet"    href="public/plugins/toaster/toastr.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/mdl/material.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/datetimepicker/css/bootstrap-material-datetimepicker.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/plugins/owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/fonts/font-awesome.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/fonts/material-icons.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/fonts/metric.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/css/m-p.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/css/index.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="public/css/style.css?v=<?php echo time();?>">
+</head>
+<body>
+    <section id="home">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="fondo-responsive fondo1"></div>
+            </div>
+            <div class="item">
+                <div class="fondo-responsive fondo2"></div>
+            </div>
+            <div class="item">
+                <div class="fondo-responsive fondo3"></div>
+            </div>
+        </div>
+        <div class="js-contenido">
+            <h2><span class="first"></span></h2>
+            <div class="mdl-card">
+                <div class="mdl-card__title">
+                    
+                </div>
+                <div class="mdl-card__supporting-text">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+	<script src="public/js/jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
+    <script src="public/js/jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/mdl/material.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/moment/moment.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/datetimepicker/js/bootstrap-material-datetimepicker.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/toaster/toastr.js?v=<?php echo time();?>"></script>
+    <script src="public/plugins/typedjs/typed.js?v=<?php echo time();?>"></script>
+    <script src="public/js/jsmenu.js?v=<?php echo time();?>"></script>
+    <script src="public/js/jsindex.js?v=<?php echo time();?>"></script>
+    <script type="text/javascript">
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            $('select').selectpicker('mobile');
+        } else {
+            $('select').selectpicker();
+        }
+        $(function(){
+            $("h2 .first").typed({
+                strings: ["COMPRANDO NETFLIX"],             
+                typeSpeed: 100,              
+                backDelay: 1000,                                  
+                showCursor: false,               
+                cursorChar: "|",                            
+                contentType: 'html'
+            });
+        });
+    </script>
+</body>
+</html>
