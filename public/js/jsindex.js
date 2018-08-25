@@ -48,6 +48,21 @@ function next(){
 		$('#input-plan').fadeIn();
 	}
 }
+function goToPlan(){
+	$('#title').text('¿Cómo pagarás?');
+	$('#subtitle').text('Por favor seleccione un método de pago:');
+	$('#input-plan').fadeOut();
+	$('#input-pago').fadeIn();
+}
+function goToPago(metodo){
+	$('#title').text('Datos de Pago');
+	$('#subtitle').css('display','none');
+	$('#input-pago').fadeOut();
+	if(metodo == 1)
+		$('#input-tarjeta').fadeIn();
+	else
+		$('#input-efectivo').fadeIn();
+}
 function validateEmail(email){
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
